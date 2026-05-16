@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Overview</title>
+      <link rel="stylesheet" href="styles/admin-dashboard.css">
+</head>
+
+  <header class="navbar">
+    <div class="logo">....</div>
+
+    <nav>
+      <a href="1_overview.html">Overview</a>
+      <a href="2_user_management.html">User Management</a>
+      <a href="3_pet_records.html">Pet Records</a>
+    </nav>
+
+    <div class="admin-info">
+      <span>Admin</span>
+      <button id="logoutbtn">Logout</button>
+    </div>
+  </header>
+
+  <main class="dashboard">
+
+    <h1>ADMIN DASHBOARD</h1>
+
+    <section class="top-cards">
+
+      <div class="card">
+        <h2>Pet Demographics</h2>
+        <div class="chart-box">wala pa pu</div>
+      </div>
+
+      <div class="card">
+        <h2>Pending Approvals</h2>
+        <ul id="pendingList">
+          <!--for JS!!-->
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Renewal & Compliance</h2>
+        <p>Active: <span id="active">0</span></p>
+        <p>Overdue: <span id="overdue">0</span></p>
+        <p>Upcoming: <span id="upcoming">0</span></p>
+      </div>
+
+    </section>
+
+
+    <section class="summary">
+      <h2>Pet Registration Summary</h2>
+      <div class="chart-box">wala pa rin</div>
+    </section>
+
+  </main>
+
+  <script src="scripts/admin-dashboard.js"></script>
+</body>
+</html>
