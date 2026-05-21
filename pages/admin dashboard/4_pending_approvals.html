@@ -27,8 +27,69 @@
     <button class="logout" onclick="logout()">⏻</button>
   </div>
 </header>
+  <div class="header">
+    <div class="header-left">
+      ADMIN DASHBOARD
+      <div class="dots">
+        <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+      </div>
+    </div>
+    <div class="header-right">PENDING APPROVALS</div>
+  </div>
 
+  <div class="container">
+    <div class="tabs">
+      <div class="tab active">New Registration</div>
+      <div class="tab">For Renewal</div>
+      <div class="tab">Pet Information Update</div>
+    </div>
 
+    <div class="scroll-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Owner's User ID</th>
+            <th>Snapshot</th>
+            <th>Name</th>
+            <th>M/F</th>
+            <th>Species</th>
+            <th>Breed</th>
+            <th>Birthday</th>
+            <th>Age</th>
+            <th>Notes</th>
+            <th>Medical Records</th>
+            <th colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>MM-DD-YYY</td>
+            <td>UID</td>
+            <td><span class="view-link">VIEW</span></td>
+            <td>PET'S NAME</td>
+            <td>F</td><td>CAT</td><td>PET'S BREED</td><td>N/A</td><td>1</td>
+            <td><span class="view-link">VIEW</span></td>
+            <td><span class="view-link">VIEW</span></td>
+            <td><button class="btn-reject">REJECT</button></td>
+            <td><button class="btn-approve">APPROVE</button></td>
+          </tr>
+          <tr>
+            <td>MM-DD-YYY</td>
+            <td>UID</td>
+            <td><span class="view-link">VIEW</span></td>
+            <td>PET'S NAME</td>
+            <td>M</td><td>DOG</td><td>PET'S BREED</td><td>N/A</td><td>2</td>
+            <td><span class="view-link">VIEW</span></td>
+            <td><span class="view-link">VIEW</span></td>
+            <td><button class="btn-reject">REJECT</button></td>
+            <td><button class="btn-approve">APPROVE</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="paw">🐾</div>
+  </div>
 
 <script>
 function logout() {
